@@ -26,4 +26,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-models/   
+models/
+# Ignore large FFmpeg binaries
+public/models/ffmpeg/
+models/
+
+# Whisper temp audio files
+temp_audio/
