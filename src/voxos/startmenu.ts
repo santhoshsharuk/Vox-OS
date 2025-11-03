@@ -13,18 +13,15 @@ export function createStartMenu() {
       <div class="app-category">
         <h3>📱 Applications</h3>
         <div class="app-grid">
-          ${createAppTile('📁', 'Files')}
-          ${createAppTile('🎵', 'Music')}
-          ${createAppTile('🖼️', 'Photos')}
-          ${createAppTile('🌐', 'Browser')}
-          ${createAppTile('', 'WhatsApp', true, '/assets/app/whatsapplogo.png')}
-          ${createAppTile('📝', 'Notes')}
-          ${createAppTile('🎮', 'Games')}
-          ${createAppTile('⚙️', 'Settings')}
-          ${createAppTile('📊', 'Analytics')}
-          ${createAppTile('🎨', 'Design')}
-          ${createAppTile('🔧', 'Tools')}
-          ${createAppTile('📚', 'Library')}
+          ${createAppTile('📁', 'Files', 'files')}
+          ${createAppTile('🎵', 'Music', 'music')}
+          ${createAppTile('🖼️', 'Photos', 'photos')}
+          ${createAppTile('🌐', 'Browser', 'browser')}
+          ${createAppTile('', 'WhatsApp', 'whatsapp', true, '/assets/app/whatsapplogo.png')}
+          ${createAppTile('📝', 'Notes', 'notes')}
+          ${createAppTile('📖', 'Vox Learner', 'learning')}
+          ${createAppTile('🎮', 'Games', 'games')}
+          ${createAppTile('⚙️', 'Settings', 'settings')}
         </div>
       </div>
     </div>
@@ -45,20 +42,22 @@ export function createStartMenu() {
   // App tile handlers
   startMenu.querySelectorAll('.app-tile').forEach(tile => {
     tile.addEventListener('click', () => {
-      const appName = tile.querySelector('.app-tile-label')?.textContent || ''
-      window.dispatchEvent(new CustomEvent('open-app', { detail: appName.toLowerCase() }))
-      startMenu.classList.add('hidden')
+      const appId = tile.getAttribute('data-app-id') || ''
+      if (appId) {
+        window.dispatchEvent(new CustomEvent('open-app', { detail: appId }))
+        startMenu.classList.add('hidden')
+      }
     })
   })
 }
 
-function createAppTile(emoji: string, label: string, useImage: boolean = false, imagePath: string = ''): string {
+function createAppTile(emoji: string, label: string, appId: string, useImage: boolean = false, imagePath: string = ''): string {
   const iconContent = useImage 
     ? `<img src="${imagePath}" alt="${label}" style="width: 32px; height: 32px; object-fit: contain;" />`
     : emoji
   
   return `
-    <div class="app-tile">
+    <div class="app-tile" data-app-id="${appId}">
       <div class="app-tile-icon">${iconContent}</div>
       <div class="app-tile-label">${label}</div>
     </div>

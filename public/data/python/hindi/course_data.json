@@ -1,0 +1,355 @@
+{
+  "id": "python-programming-hindi",
+  "name": "Python Programming - पूर्ण पाठ्यक्रम (Hindi Audio)",
+  "language": "hindi",
+  "description": "पायथन प्रोग्रामिंग को मूल से उन्नत स्तर तक सीखें। यह व्यापक पाठ्यक्रम हिंदी ऑडियो व्याख्या के साथ सभी प्रमुख पायथन अवधारणाओं को कवर करता है।",
+  "instructor": "Vox Learning Team",
+  "duration": "12 weeks",
+  "level": "Beginner to Advanced",
+  "thumbnail": "/data/python/hindi/bannerimg.png",
+  "modules": [
+    {
+      "id": "module-1",
+      "title": "Python की मूल बातें और शुरुआत",
+      "description": "पायथन प्रोग्रामिंग की मूलभूत अवधारणाओं को सीखें",
+      "topics": [
+        {
+          "id": "topic-1-1",
+          "title": "Python क्या है? - पूर्ण परिचय",
+          "videoUrl": "https://www.youtube.com/watch?v=kqtD5dpn9C8",
+          "duration": "14:50",
+          "description": "Python क्या है, यह इतना लोकप्रिय क्यों है, और इसका उपयोग कहाँ किया जाता है। हिंदी में समझाया गया।"
+        },
+        {
+          "id": "topic-1-2",
+          "title": "Python स्थापित करना और वातावरण सेटअप",
+          "videoUrl": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+          "duration": "18:30",
+          "description": "अपने कंप्यूटर पर Python कैसे स्थापित करें और IDE (VS Code, PyCharm) सेटअप करें। हिंदी में।"
+        },
+        {
+          "id": "topic-1-3",
+          "title": "आपका पहला Python प्रोग्राम",
+          "videoUrl": "https://www.youtube.com/watch?v=hdI2bqOjy3c",
+          "duration": "16:20",
+          "description": "Hello World से लेकर सरल गणना तक अपने पहले Python प्रोग्राम लिखें। हिंदी में।"
+        },
+        {
+          "id": "topic-1-4",
+          "title": "Python सिंटैक्स की मूल बातें",
+          "videoUrl": "https://www.youtube.com/watch?v=Z1Yd7upQsXY",
+          "duration": "22:45",
+          "description": "इंडेंटेशन, कमेंट्स और बुनियादी सिंटैक्स नियम समझें। हिंदी में।"
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "title": "चर और डेटा प्रकार",
+      "description": "Python में चर, डेटा प्रकार और संचालन",
+      "topics": [
+        {
+          "id": "topic-2-1",
+          "title": "चर - घोषणा और उपयोग",
+          "videoUrl": "https://www.youtube.com/watch?v=9WIJQDvt4Us",
+          "duration": "20:15",
+          "description": "चर क्या हैं, उन्हें कैसे बनाएं और उपयोग करें। हिंदी में।"
+        },
+        {
+          "id": "topic-2-2",
+          "title": "संख्यात्मक डेटा प्रकार - int, float",
+          "videoUrl": "https://www.youtube.com/watch?v=gCCVsvgR2KU",
+          "duration": "18:40",
+          "description": "पूर्णांक और दशमलव संख्याओं के बारे में जानें। हिंदी में।"
+        },
+        {
+          "id": "topic-2-3",
+          "title": "स्ट्रिंग और स्ट्रिंग संचालन",
+          "videoUrl": "https://www.youtube.com/watch?v=808eYu9B9Yw",
+          "duration": "25:30",
+          "description": "स्ट्रिंग कैसे बनाएं, जोड़ें और उनमें हेरफेर करें। हिंदी में।"
+        },
+        {
+          "id": "topic-2-4",
+          "title": "बूलियन और None प्रकार",
+          "videoUrl": "https://www.youtube.com/watch?v=DZwmZ8Usvnk",
+          "duration": "15:20",
+          "description": "True/False मान और None के बारे में जानें। हिंदी में।"
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "title": "डेटा संरचनाएं",
+      "description": "Python की मुख्य डेटा संरचनाओं को समझना",
+      "topics": [
+        {
+          "id": "topic-3-1",
+          "title": "Lists - मूल बातें और संचालन",
+          "videoUrl": "https://www.youtube.com/watch?v=W8KRzm-HUcc",
+          "duration": "26:15",
+          "description": "Lists बनाना, एक्सेस करना और संशोधित करना सीखें। हिंदी में।"
+        },
+        {
+          "id": "topic-3-2",
+          "title": "Tuples - अपरिवर्तनीय डेटा",
+          "videoUrl": "https://www.youtube.com/watch?v=NI26dqhs2Rk",
+          "duration": "18:45",
+          "description": "Tuples और उनके उपयोग को समझें। हिंदी में।"
+        },
+        {
+          "id": "topic-3-3",
+          "title": "Dictionaries - Key-Value जोड़े",
+          "videoUrl": "https://www.youtube.com/watch?v=daefaLgNkw0",
+          "duration": "23:40",
+          "description": "Dictionaries कैसे बनाएं और उपयोग करें। हिंदी में।"
+        },
+        {
+          "id": "topic-3-4",
+          "title": "Sets - अद्वितीय डेटा संग्रह",
+          "videoUrl": "https://www.youtube.com/watch?v=sBvaPopWOmQ",
+          "duration": "18:30",
+          "description": "Sets और उनके गणितीय संचालन। हिंदी में।"
+        }
+      ]
+    },
+    {
+      "id": "module-4",
+      "title": "नियंत्रण प्रवाह संरचनाएं",
+      "description": "शर्तों और लूप का उपयोग",
+      "topics": [
+        {
+          "id": "topic-4-1",
+          "title": "if-else स्टेटमेंट",
+          "videoUrl": "https://www.youtube.com/watch?v=IsG4Xd6LlsM",
+          "duration": "18:55",
+          "description": "सशर्त कथनों का उपयोग कैसे करें। हिंदी में।"
+        },
+        {
+          "id": "topic-4-2",
+          "title": "for Loops",
+          "videoUrl": "https://www.youtube.com/watch?v=s9wW2PpJsmQ",
+          "duration": "24:10",
+          "description": "Lists और ranges के साथ for loops का उपयोग। हिंदी में।"
+        },
+        {
+          "id": "topic-4-3",
+          "title": "while Loops",
+          "videoUrl": "https://www.youtube.com/watch?v=6TEGxJaLMLU",
+          "duration": "16:30",
+          "description": "while loops और उनके अनुप्रयोग। हिंदी में।"
+        },
+        {
+          "id": "topic-4-4",
+          "title": "break, continue, और pass",
+          "videoUrl": "https://www.youtube.com/watch?v=yCZBnjF4_tU",
+          "duration": "14:20",
+          "description": "लूप नियंत्रण कथनों को समझना। हिंदी में।"
+        }
+      ]
+    },
+    {
+      "id": "module-5",
+      "title": "फ़ंक्शन",
+      "description": "पुन: उपयोग योग्य कोड लिखना",
+      "topics": [
+        {
+          "id": "topic-5-1",
+          "title": "फ़ंक्शन परिभाषित करना",
+          "videoUrl": "https://www.youtube.com/watch?v=NE97ylAnrz4",
+          "duration": "20:45",
+          "description": "फ़ंक्शन कैसे बनाएं और कॉल करें। हिंदी में।"
+        },
+        {
+          "id": "topic-5-2",
+          "title": "पैरामीटर और आर्गुमेंट",
+          "videoUrl": "https://www.youtube.com/watch?v=ijXMGpoMkhQ",
+          "duration": "22:15",
+          "description": "फ़ंक्शन में डेटा कैसे पास करें। हिंदी में।"
+        },
+        {
+          "id": "topic-5-3",
+          "title": "Return स्टेटमेंट",
+          "videoUrl": "https://www.youtube.com/watch?v=_P2QqCcM7Io",
+          "duration": "17:30",
+          "description": "फ़ंक्शन से मान कैसे वापस करें। हिंदी में।"
+        },
+        {
+          "id": "topic-5-4",
+          "title": "Lambda फ़ंक्शन",
+          "videoUrl": "https://www.youtube.com/watch?v=25ovCm9jKfA",
+          "duration": "15:45",
+          "description": "अनाम फ़ंक्शन और उनके उपयोग। हिंदी में।"
+        }
+      ]
+    },
+    {
+      "id": "module-6",
+      "title": "मॉड्यूल और पैकेज",
+      "description": "कोड को व्यवस्थित और पुन: उपयोग करना",
+      "topics": [
+        {
+          "id": "topic-6-1",
+          "title": "मॉड्यूल आयात करना",
+          "videoUrl": "https://www.youtube.com/watch?v=CqvZ3vGoGs0",
+          "duration": "25:20",
+          "description": "मॉड्यूल कैसे आयात और उपयोग करें। हिंदी में।"
+        },
+        {
+          "id": "topic-6-2",
+          "title": "मानक पुस्तकालय",
+          "videoUrl": "https://www.youtube.com/watch?v=2wKpKl1pPCE",
+          "duration": "28:40",
+          "description": "Python के अंतर्निहित मॉड्यूल। हिंदी में।"
+        },
+        {
+          "id": "topic-6-3",
+          "title": "pip और बाहरी पैकेज",
+          "videoUrl": "https://www.youtube.com/watch?v=U2ZN104hIcc",
+          "duration": "20:15",
+          "description": "बाहरी पैकेज कैसे स्थापित और उपयोग करें। हिंदी में।"
+        },
+        {
+          "id": "topic-6-4",
+          "title": "अपने खुद के मॉड्यूल बनाना",
+          "videoUrl": "https://www.youtube.com/watch?v=sugvnHA7ElY",
+          "duration": "22:50",
+          "description": "कस्टम मॉड्यूल और पैकेज बनाना। हिंदी में।"
+        }
+      ]
+    },
+    {
+      "id": "module-7",
+      "title": "फ़ाइल प्रबंधन",
+      "description": "फ़ाइलों को पढ़ना, लिखना और प्रबंधित करना",
+      "topics": [
+        {
+          "id": "topic-7-1",
+          "title": "फ़ाइलें खोलना और बंद करना",
+          "videoUrl": "https://www.youtube.com/watch?v=Uh2ebFW8OYM",
+          "duration": "19:30",
+          "description": "फ़ाइलों के साथ कैसे काम करें। हिंदी में।"
+        },
+        {
+          "id": "topic-7-2",
+          "title": "फ़ाइलों में लिखना",
+          "videoUrl": "https://www.youtube.com/watch?v=4mX0uPQFLDU",
+          "duration": "17:45",
+          "description": "टेक्स्ट फ़ाइलों में डेटा लिखना। हिंदी में।"
+        },
+        {
+          "id": "topic-7-3",
+          "title": "फ़ाइलों से पढ़ना",
+          "videoUrl": "https://www.youtube.com/watch?v=xmC5cCH0Gu8",
+          "duration": "21:20",
+          "description": "फ़ाइलों से डेटा पढ़ना और प्रोसेस करना। हिंदी में।"
+        },
+        {
+          "id": "topic-7-4",
+          "title": "CSV और JSON फ़ाइलें",
+          "videoUrl": "https://www.youtube.com/watch?v=q5uM4VKywbA",
+          "duration": "25:35",
+          "description": "सामान्य फ़ाइल प्रारूपों के साथ काम करना। हिंदी में।"
+        }
+      ]
+    },
+    {
+      "id": "module-8",
+      "title": "त्रुटि प्रबंधन",
+      "description": "त्रुटियों का पता लगाना और प्रबंधन",
+      "topics": [
+        {
+          "id": "topic-8-1",
+          "title": "try-except ब्लॉक",
+          "videoUrl": "https://www.youtube.com/watch?v=NIWwJbo-9_8",
+          "duration": "20:10",
+          "description": "त्रुटियों को कैसे पकड़ें और संभालें। हिंदी में।"
+        },
+        {
+          "id": "topic-8-2",
+          "title": "एकाधिक except खंड",
+          "videoUrl": "https://www.youtube.com/watch?v=6SPDvPK38tw",
+          "duration": "16:25",
+          "description": "विभिन्न प्रकार की त्रुटियों को संभालना। हिंदी में।"
+        },
+        {
+          "id": "topic-8-3",
+          "title": "finally और else",
+          "videoUrl": "https://www.youtube.com/watch?v=HQqqNBZosn8",
+          "duration": "14:40",
+          "description": "पूर्ण त्रुटि प्रबंधन संरचना। हिंदी में।"
+        }
+      ]
+    },
+    {
+      "id": "module-9",
+      "title": "ऑब्जेक्ट-ओरिएंटेड प्रोग्रामिंग (OOP)",
+      "description": "क्लास और ऑब्जेक्ट - उन्नत Python",
+      "topics": [
+        {
+          "id": "topic-9-1",
+          "title": "क्लास और ऑब्जेक्ट",
+          "videoUrl": "https://www.youtube.com/watch?v=ZDa-Z5JzLYM",
+          "duration": "28:45",
+          "description": "OOP की मूल बातें और क्लास बनाना। हिंदी में।"
+        },
+        {
+          "id": "topic-9-2",
+          "title": "Constructor और __init__",
+          "videoUrl": "https://www.youtube.com/watch?v=BJ-VvGyQxho",
+          "duration": "22:30",
+          "description": "ऑब्जेक्ट को इनिशियलाइज़ करना। हिंदी में।"
+        },
+        {
+          "id": "topic-9-3",
+          "title": "विरासत (Inheritance)",
+          "videoUrl": "https://www.youtube.com/watch?v=Cn7AkDb4pIU",
+          "duration": "25:15",
+          "description": "क्लास विरासत और कोड पुन: उपयोग। हिंदी में।"
+        },
+        {
+          "id": "topic-9-4",
+          "title": "Polymorphism और Encapsulation",
+          "videoUrl": "https://www.youtube.com/watch?v=A9kSngn7254",
+          "duration": "23:50",
+          "description": "उन्नत OOP अवधारणाएं। हिंदी में।"
+        }
+      ]
+    },
+    {
+      "id": "module-10",
+      "title": "उन्नत विषय",
+      "description": "Python की उन्नत सुविधाएं",
+      "topics": [
+        {
+          "id": "topic-10-1",
+          "title": "List Comprehensions",
+          "videoUrl": "https://www.youtube.com/watch?v=AhSvKGTh28Q",
+          "duration": "19:40",
+          "description": "संक्षिप्त और कुशल कोड लिखना। हिंदी में।"
+        },
+        {
+          "id": "topic-10-2",
+          "title": "Decorators",
+          "videoUrl": "https://www.youtube.com/watch?v=FsAPt_9Bf3U",
+          "duration": "24:25",
+          "description": "फ़ंक्शन को संशोधित और बढ़ाना। हिंदी में।"
+        },
+        {
+          "id": "topic-10-3",
+          "title": "Generators और Iterators",
+          "videoUrl": "https://www.youtube.com/watch?v=bD05uGo_sVI",
+          "duration": "26:15",
+          "description": "मेमोरी-कुशल कोड लिखना। हिंदी में।"
+        },
+        {
+          "id": "topic-10-4",
+          "title": "Regular Expressions (Regex)",
+          "videoUrl": "https://www.youtube.com/watch?v=K8L6KVGG-7o",
+          "duration": "28:30",
+          "description": "टेक्स्ट पैटर्न मैचिंग और प्रोसेसिंग। हिंदी में।"
+        }
+      ]
+    }
+  ]
+}

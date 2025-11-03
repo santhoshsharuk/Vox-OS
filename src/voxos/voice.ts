@@ -9,11 +9,18 @@ export class VoiceAssistant {
   private whisperAvailable: boolean = false
   private mediaRecorder: MediaRecorder | null = null
   private audioChunks: Blob[] = []
+  private voiceGender: 'male' | 'female' = 'male'
 
   constructor(windowManager: any, notificationManager: any) {
     this.windowManager = windowManager
     this.notificationManager = notificationManager
     this.synthesis = window.speechSynthesis
+
+    // Load saved voice preference
+    const savedGender = localStorage.getItem('voiceGender') as 'male' | 'female' | null
+    if (savedGender) {
+      this.voiceGender = savedGender
+    }
 
     this.checkWhisperService()
     this.initializeRecognition()
@@ -383,7 +390,7 @@ export class VoiceAssistant {
     this.speak('I heard you. Command received.')
   }
 
-  private speak(text: string) {
+  speak(text: string) {
     console.log('🔊 Speaking:', text)
     
     if (!this.synthesis) {
@@ -399,10 +406,64 @@ export class VoiceAssistant {
     utterance.pitch = 1.0
     utterance.volume = 1.0
     
+    // Select voice based on gender preference
+    const voices = this.synthesis.getVoices()
+    const selectedVoice = this.selectVoiceByGender(voices, this.voiceGender)
+    if (selectedVoice) {
+      utterance.voice = selectedVoice
+      console.log('🎤 Using voice:', selectedVoice.name)
+    }
+    
     utterance.onstart = () => console.log('✅ Speech started')
     utterance.onend = () => console.log('✅ Speech ended')
     utterance.onerror = (e) => console.error('❌ Speech error:', e)
     
     this.synthesis.speak(utterance)
+  }
+
+  private selectVoiceByGender(voices: SpeechSynthesisVoice[], gender: 'male' | 'female'): SpeechSynthesisVoice | null {
+    if (voices.length === 0) return null
+
+    // Filter voices by gender
+    const genderVoices = voices.filter(voice => {
+      const name = voice.name.toLowerCase()
+      const isFemale = name.includes('female') || name.includes('woman') || 
+                       name.includes('zira') || name.includes('samantha') || 
+                       name.includes('victoria') || name.includes('susan')
+      const isMale = name.includes('male') || name.includes('man') || 
+                     name.includes('david') || name.includes('mark') || 
+                     name.includes('george') || name.includes('james')
+      
+      if (gender === 'female') {
+        return isFemale || (!isMale && voice.name.match(/^(Microsoft|Google|Apple).*Female/i))
+      } else {
+        return isMale || (!isFemale && voice.name.match(/^(Microsoft|Google|Apple).*Male/i))
+      }
+    })
+
+    // Prefer English voices
+    const englishVoices = genderVoices.filter(v => v.lang.startsWith('en'))
+    if (englishVoices.length > 0) {
+      return englishVoices[0]
+    }
+
+    // Fallback to any gender-matching voice
+    if (genderVoices.length > 0) {
+      return genderVoices[0]
+    }
+
+    // Last resort: return first available voice
+    return voices[0]
+  }
+
+  setVoiceGender(gender: 'male' | 'female') {
+    this.voiceGender = gender
+    localStorage.setItem('voiceGender', gender)
+    console.log('🎤 Voice gender set to:', gender)
+    this.notificationManager.show('Voice Settings', `Voice changed to ${gender}`, 'success')
+  }
+
+  getVoiceGender(): 'male' | 'female' {
+    return this.voiceGender
   }
 }

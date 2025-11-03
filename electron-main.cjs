@@ -24,9 +24,17 @@ function createWindow() {
       // Never allow insecure content
       allowRunningInsecureContent: false,
       // Enable sandbox for better security
-      sandbox: false // Keep false for preload script access
+      sandbox: false, // Keep false for preload script access
+      // Enable hardware acceleration for better performance
+      enableWebGL: true,
+      enableGPU: true
     }
   });
+
+  // Enable hardware acceleration explicitly
+  app.commandLine.appendSwitch('enable-gpu-rasterization');
+  app.commandLine.appendSwitch('enable-zero-copy');
+  app.commandLine.appendSwitch('disable-gpu-vsync');
 
   // Set Chrome user agent for better compatibility with web apps like WhatsApp
   mainWindow.webContents.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
@@ -54,8 +62,8 @@ function createWindow() {
   
   if (isDev) {
     mainWindow.loadURL(process.env.VITE_DEV_SERVER_URL);
-    // Open DevTools in development
-    mainWindow.webContents.openDevTools();
+    // Open DevTools in development (uncomment if needed)
+    // mainWindow.webContents.openDevTools();
   } else {
     mainWindow.loadFile(path.join(__dirname, 'dist/index.html'));
   }

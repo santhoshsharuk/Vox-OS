@@ -12,6 +12,7 @@ export function createDesktop() {
       ${createDesktopIcon('🌐', 'Browser', 'browser')}
       ${createDesktopIcon('', 'WhatsApp', 'whatsapp', true, '/assets/app/whatsapplogo.png')}
       ${createDesktopIcon('📝', 'Notes', 'notes')}
+      ${createDesktopIcon('📖', 'Vox Learner', 'learning')}
       ${createDesktopIcon('🎮', 'Games', 'games')}
     </div>
   `

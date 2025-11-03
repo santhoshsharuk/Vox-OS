@@ -1,12 +1,20 @@
 // Taskbar Component
+import { UserSetup } from './user-setup'
+
 export function createTaskbar() {
   const taskbar = document.getElementById('taskbar')!
+  const userName = UserSetup.getUserName()
+  const profilePicture = localStorage.getItem('voxos-profile-picture')
+  
+  // Determine user icon HTML
+  const userIconHTML = profilePicture 
+    ? `<img src="${profilePicture}" style="width: 24px; height: 24px; border-radius: 50%; object-fit: cover;" />`
+    : '👤'
   
   taskbar.innerHTML = `
     <div class="taskbar-left">
       <button class="start-button" id="start-btn">
-        <span class="start-icon">🪄</span>
-        <span class="start-text">Vox . OS</span>
+        <img src="/assets/app/startbutton.png" alt="Start" class="start-icon" />
       </button>
       <div class="taskbar-apps" id="taskbar-apps"></div>
     </div>
@@ -17,6 +25,10 @@ export function createTaskbar() {
       </div>
     </div>
     <div class="taskbar-right">
+      <div class="user-greeting" id="user-greeting" title="Logged in as ${userName}">
+        <span class="user-icon">${userIconHTML}</span>
+        <span class="user-name">${userName}</span>
+      </div>
       <button class="taskbar-btn" id="voice-btn" title="Voice Assistant">
         <span>🎙️</span>
       </button>

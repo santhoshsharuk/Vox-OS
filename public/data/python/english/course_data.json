@@ -1,0 +1,355 @@
+{
+  "id": "python-programming-english",
+  "name": "Python Programming - Complete Course",
+  "language": "english",
+  "description": "Learn Python programming from basics to advanced level. This comprehensive course covers all major Python concepts with English audio explanations.",
+  "instructor": "Vox Learning Team",
+  "duration": "12 weeks",
+  "level": "Beginner to Advanced",
+  "thumbnail": "/data/python/english/bannerimg.png",
+  "modules": [
+    {
+      "id": "module-1",
+      "title": "Python Basics and Getting Started",
+      "description": "Learn the fundamental concepts of Python programming",
+      "topics": [
+        {
+          "id": "topic-1-1",
+          "title": "What is Python? - Complete Introduction",
+          "videoUrl": "https://www.youtube.com/watch?v=kqtD5dpn9C8",
+          "duration": "14:50",
+          "description": "Learn what Python is, why it's so popular, and where it's used."
+        },
+        {
+          "id": "topic-1-2",
+          "title": "Installing Python and Setting Up Environment",
+          "videoUrl": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+          "duration": "18:30",
+          "description": "How to install Python on your computer and set up IDE (VS Code, PyCharm)."
+        },
+        {
+          "id": "topic-1-3",
+          "title": "Your First Python Program",
+          "videoUrl": "https://www.youtube.com/watch?v=hdI2bqOjy3c",
+          "duration": "16:20",
+          "description": "Write your first Python programs from Hello World to simple calculations."
+        },
+        {
+          "id": "topic-1-4",
+          "title": "Python Syntax Basics",
+          "videoUrl": "https://www.youtube.com/watch?v=Z1Yd7upQsXY",
+          "duration": "22:45",
+          "description": "Understand indentation, comments, and basic syntax rules."
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "title": "Variables and Data Types",
+      "description": "Variables, data types, and operations in Python",
+      "topics": [
+        {
+          "id": "topic-2-1",
+          "title": "Variables - Declaration and Usage",
+          "videoUrl": "https://www.youtube.com/watch?v=9WIJQDvt4Us",
+          "duration": "20:15",
+          "description": "What are variables, how to create and use them."
+        },
+        {
+          "id": "topic-2-2",
+          "title": "Numeric Data Types - int, float",
+          "videoUrl": "https://www.youtube.com/watch?v=gCCVsvgR2KU",
+          "duration": "18:40",
+          "description": "Learn about integers and floating-point numbers."
+        },
+        {
+          "id": "topic-2-3",
+          "title": "Strings and String Operations",
+          "videoUrl": "https://www.youtube.com/watch?v=808eYu9B9Yw",
+          "duration": "25:30",
+          "description": "How to create, concatenate, and manipulate strings."
+        },
+        {
+          "id": "topic-2-4",
+          "title": "Boolean and None Types",
+          "videoUrl": "https://www.youtube.com/watch?v=DZwmZ8Usvnk",
+          "duration": "15:20",
+          "description": "Learn about True/False values and None."
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "title": "Data Structures",
+      "description": "Understanding Python's main data structures",
+      "topics": [
+        {
+          "id": "topic-3-1",
+          "title": "Lists - Basics and Operations",
+          "videoUrl": "https://www.youtube.com/watch?v=W8KRzm-HUcc",
+          "duration": "26:15",
+          "description": "Learn to create, access, and modify lists."
+        },
+        {
+          "id": "topic-3-2",
+          "title": "Tuples - Immutable Data",
+          "videoUrl": "https://www.youtube.com/watch?v=NI26dqhs2Rk",
+          "duration": "18:45",
+          "description": "Understand tuples and their use cases."
+        },
+        {
+          "id": "topic-3-3",
+          "title": "Dictionaries - Key-Value Pairs",
+          "videoUrl": "https://www.youtube.com/watch?v=daefaLgNkw0",
+          "duration": "23:40",
+          "description": "How to create and use dictionaries."
+        },
+        {
+          "id": "topic-3-4",
+          "title": "Sets - Unique Data Collection",
+          "videoUrl": "https://www.youtube.com/watch?v=sBvaPopWOmQ",
+          "duration": "18:30",
+          "description": "Understanding sets and their mathematical operations."
+        }
+      ]
+    },
+    {
+      "id": "module-4",
+      "title": "Control Flow Structures",
+      "description": "Using conditions and loops",
+      "topics": [
+        {
+          "id": "topic-4-1",
+          "title": "if-else Statements",
+          "videoUrl": "https://www.youtube.com/watch?v=IsG4Xd6LlsM",
+          "duration": "18:55",
+          "description": "How to use conditional statements."
+        },
+        {
+          "id": "topic-4-2",
+          "title": "for Loops",
+          "videoUrl": "https://www.youtube.com/watch?v=s9wW2PpJsmQ",
+          "duration": "24:10",
+          "description": "Using for loops with lists and ranges."
+        },
+        {
+          "id": "topic-4-3",
+          "title": "while Loops",
+          "videoUrl": "https://www.youtube.com/watch?v=6TEGxJaLMLU",
+          "duration": "16:30",
+          "description": "Learn about while loops and their applications."
+        },
+        {
+          "id": "topic-4-4",
+          "title": "break, continue, and pass",
+          "videoUrl": "https://www.youtube.com/watch?v=yCZBnjF4_tU",
+          "duration": "14:20",
+          "description": "Understanding loop control statements."
+        }
+      ]
+    },
+    {
+      "id": "module-5",
+      "title": "Functions",
+      "description": "Writing reusable code",
+      "topics": [
+        {
+          "id": "topic-5-1",
+          "title": "Defining Functions",
+          "videoUrl": "https://www.youtube.com/watch?v=NE97ylAnrz4",
+          "duration": "20:45",
+          "description": "How to create and call functions."
+        },
+        {
+          "id": "topic-5-2",
+          "title": "Parameters and Arguments",
+          "videoUrl": "https://www.youtube.com/watch?v=ijXMGpoMkhQ",
+          "duration": "22:15",
+          "description": "How to pass data to functions."
+        },
+        {
+          "id": "topic-5-3",
+          "title": "Return Statements",
+          "videoUrl": "https://www.youtube.com/watch?v=_P2QqCcM7Io",
+          "duration": "17:30",
+          "description": "How to return values from functions."
+        },
+        {
+          "id": "topic-5-4",
+          "title": "Lambda Functions",
+          "videoUrl": "https://www.youtube.com/watch?v=25ovCm9jKfA",
+          "duration": "15:45",
+          "description": "Anonymous functions and their uses."
+        }
+      ]
+    },
+    {
+      "id": "module-6",
+      "title": "Modules and Packages",
+      "description": "Organizing and reusing code",
+      "topics": [
+        {
+          "id": "topic-6-1",
+          "title": "Importing Modules",
+          "videoUrl": "https://www.youtube.com/watch?v=CqvZ3vGoGs0",
+          "duration": "25:20",
+          "description": "How to import and use modules."
+        },
+        {
+          "id": "topic-6-2",
+          "title": "Standard Library",
+          "videoUrl": "https://www.youtube.com/watch?v=2wKpKl1pPCE",
+          "duration": "28:40",
+          "description": "Explore Python's built-in modules."
+        },
+        {
+          "id": "topic-6-3",
+          "title": "pip and External Packages",
+          "videoUrl": "https://www.youtube.com/watch?v=U2ZN104hIcc",
+          "duration": "20:15",
+          "description": "How to install and use external packages."
+        },
+        {
+          "id": "topic-6-4",
+          "title": "Creating Your Own Modules",
+          "videoUrl": "https://www.youtube.com/watch?v=sugvnHA7ElY",
+          "duration": "22:50",
+          "description": "Creating custom modules and packages."
+        }
+      ]
+    },
+    {
+      "id": "module-7",
+      "title": "File Handling",
+      "description": "Reading, writing, and managing files",
+      "topics": [
+        {
+          "id": "topic-7-1",
+          "title": "Opening and Closing Files",
+          "videoUrl": "https://www.youtube.com/watch?v=Uh2ebFW8OYM",
+          "duration": "19:30",
+          "description": "How to work with files."
+        },
+        {
+          "id": "topic-7-2",
+          "title": "Writing to Files",
+          "videoUrl": "https://www.youtube.com/watch?v=4mX0uPQFLDU",
+          "duration": "17:45",
+          "description": "Writing data to text files."
+        },
+        {
+          "id": "topic-7-3",
+          "title": "Reading from Files",
+          "videoUrl": "https://www.youtube.com/watch?v=xmC5cCH0Gu8",
+          "duration": "21:20",
+          "description": "Reading and processing data from files."
+        },
+        {
+          "id": "topic-7-4",
+          "title": "CSV and JSON Files",
+          "videoUrl": "https://www.youtube.com/watch?v=q5uM4VKywbA",
+          "duration": "25:35",
+          "description": "Working with common file formats."
+        }
+      ]
+    },
+    {
+      "id": "module-8",
+      "title": "Exception Handling",
+      "description": "Detecting and managing errors",
+      "topics": [
+        {
+          "id": "topic-8-1",
+          "title": "try-except blocks",
+          "videoUrl": "https://www.youtube.com/watch?v=NIWwJbo-9_8",
+          "duration": "20:10",
+          "description": "How to catch and handle errors."
+        },
+        {
+          "id": "topic-8-2",
+          "title": "Multiple except clauses",
+          "videoUrl": "https://www.youtube.com/watch?v=6SPDvPK38tw",
+          "duration": "16:25",
+          "description": "Handling different types of errors."
+        },
+        {
+          "id": "topic-8-3",
+          "title": "finally and else",
+          "videoUrl": "https://www.youtube.com/watch?v=HQqqNBZosn8",
+          "duration": "14:40",
+          "description": "Complete error handling structure."
+        }
+      ]
+    },
+    {
+      "id": "module-9",
+      "title": "Object-Oriented Programming (OOP)",
+      "description": "Classes and objects - Advanced Python",
+      "topics": [
+        {
+          "id": "topic-9-1",
+          "title": "Classes and Objects",
+          "videoUrl": "https://www.youtube.com/watch?v=ZDa-Z5JzLYM",
+          "duration": "28:45",
+          "description": "OOP basics and creating classes."
+        },
+        {
+          "id": "topic-9-2",
+          "title": "Constructor and __init__",
+          "videoUrl": "https://www.youtube.com/watch?v=BJ-VvGyQxho",
+          "duration": "22:30",
+          "description": "Initializing objects and using constructors."
+        },
+        {
+          "id": "topic-9-3",
+          "title": "Inheritance",
+          "videoUrl": "https://www.youtube.com/watch?v=Cn7AkDb4pIU",
+          "duration": "25:15",
+          "description": "Class inheritance and code reusability."
+        },
+        {
+          "id": "topic-9-4",
+          "title": "Polymorphism and Encapsulation",
+          "videoUrl": "https://www.youtube.com/watch?v=A9kSngn7254",
+          "duration": "23:50",
+          "description": "Advanced OOP concepts."
+        }
+      ]
+    },
+    {
+      "id": "module-10",
+      "title": "Advanced Topics",
+      "description": "Python's advanced features",
+      "topics": [
+        {
+          "id": "topic-10-1",
+          "title": "List Comprehensions",
+          "videoUrl": "https://www.youtube.com/watch?v=AhSvKGTh28Q",
+          "duration": "19:40",
+          "description": "Writing concise and efficient code."
+        },
+        {
+          "id": "topic-10-2",
+          "title": "Decorators",
+          "videoUrl": "https://www.youtube.com/watch?v=FsAPt_9Bf3U",
+          "duration": "24:25",
+          "description": "Modifying and enhancing functions."
+        },
+        {
+          "id": "topic-10-3",
+          "title": "Generators and Iterators",
+          "videoUrl": "https://www.youtube.com/watch?v=bD05uGo_sVI",
+          "duration": "26:15",
+          "description": "Writing memory-efficient code."
+        },
+        {
+          "id": "topic-10-4",
+          "title": "Regular Expressions (Regex)",
+          "videoUrl": "https://www.youtube.com/watch?v=K8L6KVGG-7o",
+          "duration": "28:30",
+          "description": "Text pattern matching and processing."
+        }
+      ]
+    }
+  ]
+}
